@@ -1,0 +1,71 @@
+.container {
+  margin: 20px 20px;
+  padding: 5px 5px 5px 5px;
+  width: 595px;
+  height: 400px;
+  border: 0;
+  background-color: rgb(245, 243, 242);
+}
+
+.container:hover {
+  border: 0; 
+  transition: border 0.3s ease;
+}
+
+.block {
+  padding: 30px 30px 10px 10px;
+  min-height: 80px;
+  max-width: 555px;
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+  height: max-content;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 90px;
+  height: 40px;
+  background-color: rgb(38, 38, 212);
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 3px groove rgb(179, 183, 236);
+}
+
+p {
+  margin: 10px;
+}
+
+.text {
+  width: auto;
+  max-height: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  word-break: normal;
+  border-radius: 5px;
+  border: 1px solid rgba(199, 206, 211, 0.993);
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, border 0.5s ease-out;
+  
+}
+
+.text.open {
+  max-height: 75px;
+  border: 1px solid rgba(199, 206, 211, 0.993);
+  display: flex;
+  transition: max-height 0.5s ease, border 0.5s ease; 
+}
+
+.copy {
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  float: right;
+}

@@ -1,0 +1,27 @@
+stack: node 20  # окружение
+
+branches:
+  only:
+    - master  # ветка git
+    - main
+
+cache: node_modules  # кеширование
+
+build: off  # отключаем встроенную в appveyor систему сборки
+
+build_script:
+  - yarn build   # команда сборки
+
+  # Название конфигурации
+version: 1.0.{build}
+
+# Деплой на GitHub Pages
+deploy:
+  provider: GitHub
+  artifact: /.*/  # Артефакты для деплоя (все файлы)
+  draft: false
+  description: "Automatic deployment to GitHub Pages"
+  auth_token:
+    secure: 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  # Замените на зашифрованный токен GitHub
+  on:
+    branch: main  # Ветка, с которой будет происходить деплой

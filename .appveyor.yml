@@ -9,9 +9,6 @@ cache: node_modules  # кеширование
 
 build: off  # отключаем встроенную в appveyor систему сборки
 
-build_script:
-  - yarn build   # команда сборки
-
   # Название конфигурации
 version: 1.0.{build}
 

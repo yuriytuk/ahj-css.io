@@ -22,6 +22,6 @@ deploy:
   draft: false
   description: "Automatic deployment to GitHub Pages"
   auth_token:
-    secure: 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  # Замените на зашифрованный токен GitHub
+    secure: Z75hsAQykG4ObHVui+pVRK+3l8CE1EztypCJJU/lzLXfwSRM21UZoVMUxfp1EdBQ  # Замените на зашифрованный токен GitHub
   on:
     branch: main  # Ветка, с которой будет происходить деплой
